@@ -1,0 +1,156 @@
+/* ALL VIEW */
+*{
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+:root {
+	--Desaturated-Red: hsl(0, 36%, 70%);
+	--Blue: hsl(223, 87%, 63%);
+	--Pale-Blue: hsl(223, 100%, 88%)
+	--Light-Red: hsl(354, 100%, 66%)
+	--Gray: hsl(0, 0%, 59%)
+	--Very-Dark-Blue: hsl(209, 33%, 12%)
+}
+
+body {
+    min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+  }
+
+.containerMain{
+	display: flex;
+	flex-direction: column;
+	margin: 0 10% 0 10%;
+	height: 100%;
+}
+
+.pingLogo{
+	width: 8rem;
+	height: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1{
+	margin-left: auto;
+	margin-right: auto;
+	color: grey;
+	font-weight: 300;
+	margin-bottom: 0px;
+}
+
+span{
+	color: black;
+	font-weight: 700;
+}
+
+.subscribe{
+	margin-left: auto;
+	margin-right: auto;
+	color: grey;
+	font-weight: 300;
+	margin-top: 1rem;
+}
+
+.emailContainer{
+	display: flex;
+}
+
+.emailInput{
+	border-radius: 3rem;
+	padding-left: 3rem;
+}
+
+.buttonInput{
+	border-radius: 3rem;
+	background-color: var(--Blue);
+	color: white;
+	font-weight: 700;
+	height: 3rem;
+}
+
+.buttonInput:hover{
+	cursor: pointer;
+}
+
+.illustration{
+	margin-top: 5rem;
+}
+.containerSocialMediaIcons{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+i{
+	margin-left: 1rem;
+	margin-right: 1rem;
+    color: var(--Blue);
+}
+
+i:hover{
+	cursor: pointer;
+}
+
+.copyRight{
+	margin-left: auto;
+	margin-right: auto;
+	color: grey;
+	font-size: 10px;
+}
+
+.containerSocialMediaIcons{
+		margin-top: 4rem;
+	}
+
+
+/* MOBILE VIEW */
+@media screen and (max-width: 1000px){
+	h1{
+		text-align: center;
+	}
+	
+	.emailContainer{
+		flex-direction: column;
+	}
+
+	.emailInput{
+		height: 3rem;
+		width: 87%;
+	}
+
+	.buttonInput{
+		height: 3rem;
+		width: 100%;
+	}
+
+	.illustration{
+		width: 27rem;
+		height: 16rem;
+	}
+}
+
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 1000px){
+	.emailContainer{
+		
+	}
+
+	.emailInput{
+		height: 3rem;
+		width: 25rem;
+	}
+
+	.buttonInput{
+		width: 13em;
+	}
+
+	
+	.illustration{
+		width: 40rem;
+		height: 25rem;
+	}
+	
+}
